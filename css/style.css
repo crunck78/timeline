@@ -9,5 +9,14 @@
 
 body {
     background-color: var(--charcoal);
-    color: var(--dim-gray);
+    color: var(--white-smoke);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-content {
+    height: 100vh;
+    overflow: hidden;
+
+    padding: 16px;
 }
