@@ -1,0 +1,13 @@
+:root {
+    /* CSS HEX */
+    --indian-red: #db5461ff;
+    --dim-gray: #686963ff;
+    --cambridge-blue: #8aa29eff;
+    --charcoal: #3d5467ff;
+    --white-smoke: #f1edeeff;
+}
+
+body {
+    background-color: var(--charcoal);
+    color: var(--dim-gray);
+}
