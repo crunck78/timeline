@@ -33,13 +33,23 @@ body {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 100px;
     width: -moz-fit-content;
     width: fit-content;
     min-width: calc(100% - 30px);
     padding: 0 16px;
     transition: transform 0.5s ease;
+}
+
+.timeline-point-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
 }
 
 .timeline-point {
@@ -51,3 +61,16 @@ body {
     flex-grow: 0;
     flex-shrink: 0;
 }
+
+/* .timeline-point-header,
+.timeline-point-footer {
+    position: absolute;
+}
+
+.timeline-point-header{
+    margin-top: -100px;
+}
+
+.timeline-point-footer{
+    margin-top: 100px;
+} */
