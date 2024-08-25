@@ -17,6 +17,37 @@ body {
 .main-content {
     height: 100vh;
     overflow: hidden;
-
     padding: 16px;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#timeline-container {
+    height: 6px;
+    border-radius: 12px;
+    background-color: var(--cambridge-blue);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: calc(100% - 30px);
+    padding: 0 16px;
+    transition: transform 0.5s ease;
+}
+
+.timeline-point {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    outline: 3px solid var(--indian-red);
+    background-color: var(--white-smoke);
+    flex-grow: 0;
+    flex-shrink: 0;
 }
