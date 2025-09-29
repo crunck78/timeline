@@ -17,7 +17,17 @@
         consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
         diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
         takimata sanctus est Lorem ipsum dolor sit amet.
-        <div id="timeline-container"></div>
+        <div class="timeline-wrapper">
+            <div class="timeline"></div>
+            <div id="timeline-container">
+
+            </div>
+        </div>
+
+        <div id="translate-container">
+            <button onclick="translateTimeline(TRANSLATE_DIRECTION_LEFT)">left</button>
+            <button onclick="translateTimeline(TRANSLATE_DIRECTION_RIGHT)">right</button>
+        </div>
     </main>
 </body>
 

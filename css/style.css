@@ -1,5 +1,5 @@
 :root {
-    /* CSS HEX */
+    /** Generated on https://coolors.co/ */
     --indian-red: #db5461ff;
     --dim-gray: #686963ff;
     --cambridge-blue: #8aa29eff;
@@ -16,7 +16,8 @@ body {
 
 .main-content {
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     padding: 16px;
     position: relative;
     box-sizing: border-box;
@@ -26,19 +27,30 @@ body {
     flex-direction: column;
 }
 
-#timeline-container {
+.timeline-wrapper {
+    margin: auto 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.timeline {
     height: 6px;
     border-radius: 12px;
     background-color: var(--cambridge-blue);
-    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#timeline-container {
+    max-width: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 100px;
-    width: -moz-fit-content;
-    width: fit-content;
-    min-width: calc(100% - 30px);
-    padding: 0 16px;
     transition: transform 0.5s ease;
 }
 
